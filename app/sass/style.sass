@@ -45,7 +45,7 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
-  background: #A287BC
+  background: #F4EDEA
   color: #fff
 
 html, body
@@ -148,6 +148,8 @@ button, .btn
   &:hover
     background: $black
     color: #fff
+    .btn-icon
+      fill: #fff
 
 .btn-border
   border: 1px solid #CBA69B
@@ -160,7 +162,8 @@ button, .btn
 .btn-sm
   height: 54px
 
-
+.btn-icon
+  @include d-flex
 
 .svg-icon
   display: inline-block
@@ -232,6 +235,9 @@ a.color-white
 .mb-35
   margin-bottom: 35px
 
+.mb-70
+  margin-bottom: 70px
+
 .w-100
   width: 100%
 
@@ -247,4 +253,14 @@ a.color-white
   display: flex
   flex-wrap: wrap
   margin: 0 -15px
+
+
+.box-text
+  font-size: 16px
+  line-height: 24px
+  color: #000
+  p
+    margin: 0 0 35px
+    &:last-child
+      margin: 0
 

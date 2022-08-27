@@ -30,7 +30,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .btn-burger span {
     display: block;
     width: 100%;
@@ -91,6 +92,36 @@ header {
   text-transform: uppercase;
   color: #231F20;
   margin-left: auto; }
+
+.header {
+  padding: 45px 0 40px; }
+  .header .btn-burger, .header .logo-letter {
+    display: none; }
+
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+  .menu-header:last-child {
+    margin-left: auto;
+    text-align: right; }
+  .menu-header li {
+    margin: 0 35px 0 0; }
+    .menu-header li:last-child {
+      margin: 0; }
+    .menu-header li a {
+      color: #231F20; }
+      .menu-header li a:hover {
+        color: #fff; }
 
 /*==========  section header end  ==========*/
 /*==========  section mobile-menu ==========*/

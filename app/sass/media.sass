@@ -1,8 +1,6 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
   .footer-right
     padding: 30px
@@ -60,8 +58,16 @@
   .home-image
     max-width: 408px
 
+  .menu-header
+    font-size: 12px
+    li
+      margin: 0 20px 0 0
 
-/* Medium Devices, Desktops */
+  .page-collection .container:before
+    width: 500px
+    height: 500px
+
+
 @media only screen and (max-width: 992px)
   .footer-left
     padding: 0
@@ -206,9 +212,33 @@
       min-width: 240px
       max-width: 240px
 
+  .menu-header
+    display: none
+
+  .header
+    padding: 21px 0
+    .btn-burger, .logo-letter
+      display: flex
+    .logo-letter
+      margin: 0
+    .btn-burger
+      order: 1
+      margin-left: auto
+
+  .btn-reverse
+    height: 43px
+
+  .form-search
+    max-width: none
+    margin: 13px 0 0
+
+  .page-collection .container:before
+    display: none
+
+  .page-collection
+    padding: 17px 0 70px
 
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   header
     .logo
@@ -285,8 +315,22 @@
   .footer-col
     margin: 0 50px 0 0
 
+  .box-text
+    p
+      margin: 0 0 25px
 
-/* Extra Small Devices, Phones */
+  .title-wrapper
+    .btn-reverse
+      margin: 0
+
+  .btn-reverse
+    height: 43px
+
+  .page
+    h1
+      font-size: 40px
+
+
 @media only screen and (max-width: 576px)
   header
     position: relative
@@ -362,6 +406,7 @@
 
 
   .home
+    padding: 37px 0 0
     .btn-course
       margin: 0 auto 44px
       height: 44px
@@ -460,6 +505,31 @@
     column-count: 2
     margin: 0
 
+  .form-search
+    input
+      font-size: 14px
+      height: 35px
+
+  .page
+    h1
+      font-size: 23px
+    .title-wrapper
+      margin: 0 0 19px
+
+  .btn-reverse
+    height: 12px
+    padding: 0
+    background: transparent
+    .btn-text
+      display: none
+    .btn-icon
+      width: 16px
+      height: 12px
+      margin: 0
+
+  .page-collection
+    h3
+      margin: 20px 0 10px
 
 @media only screen and (max-width: 480px)
   .block_hover-image
@@ -508,7 +578,18 @@
   .footer-menu
     font-size: 14px
 
-/* Custom, iPhone Retina */
+  .btn-reverse
+    height: 12px
+    
+  .collection-wrapper
+    .col-4
+      display: none
+      &:nth-child(-n+3)
+        display: block
+    .col-100
+      display: none
+
+
 @media only screen and (max-width: 380px)
   .home-image
     max-width: 310px

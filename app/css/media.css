@@ -1,5 +1,4 @@
 /*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .footer-right {
     padding: 30px; }
@@ -39,9 +38,15 @@
     .panel_heading .block_hover h4 br {
       display: none; }
   .home-image {
-    max-width: 408px; } }
+    max-width: 408px; }
+  .menu-header {
+    font-size: 12px; }
+    .menu-header li {
+      margin: 0 20px 0 0; }
+  .page-collection .container:before {
+    width: 500px;
+    height: 500px; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .footer-left {
     padding: 0;
@@ -170,9 +175,32 @@
       min-width: 200px; }
     .form-subscribe label {
       min-width: 240px;
-      max-width: 240px; } }
+      max-width: 240px; }
+  .menu-header {
+    display: none; }
+  .header {
+    padding: 21px 0; }
+    .header .btn-burger, .header .logo-letter {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .header .logo-letter {
+      margin: 0; }
+    .header .btn-burger {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-left: auto; }
+  .btn-reverse {
+    height: 43px; }
+  .form-search {
+    max-width: none;
+    margin: 13px 0 0; }
+  .page-collection .container:before {
+    display: none; }
+  .page-collection {
+    padding: 17px 0 70px; } }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   header .logo {
     max-width: 100px; }
@@ -230,9 +258,16 @@
     height: 50px;
     padding: 0 22px; }
   .footer-col {
-    margin: 0 50px 0 0; } }
+    margin: 0 50px 0 0; }
+  .box-text p {
+    margin: 0 0 25px; }
+  .title-wrapper .btn-reverse {
+    margin: 0; }
+  .btn-reverse {
+    height: 43px; }
+  .page h1 {
+    font-size: 40px; } }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   header {
     position: relative;
@@ -288,11 +323,13 @@
     .home-image:before {
       height: 194px;
       width: 375px; }
-  .home .btn-course {
-    margin: 0 auto 44px;
-    height: 44px;
-    font-size: 20px;
-    padding: 0 55px; }
+  .home {
+    padding: 37px 0 0; }
+    .home .btn-course {
+      margin: 0 auto 44px;
+      height: 44px;
+      font-size: 20px;
+      padding: 0 55px; }
   .panel_heading .block_title {
     font-size: 13px;
     letter-spacing: 0.2em;
@@ -373,7 +410,26 @@
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
-    margin: 0; } }
+    margin: 0; }
+  .form-search input {
+    font-size: 14px;
+    height: 35px; }
+  .page h1 {
+    font-size: 23px; }
+  .page .title-wrapper {
+    margin: 0 0 19px; }
+  .btn-reverse {
+    height: 12px;
+    padding: 0;
+    background: transparent; }
+    .btn-reverse .btn-text {
+      display: none; }
+    .btn-reverse .btn-icon {
+      width: 16px;
+      height: 12px;
+      margin: 0; }
+  .page-collection h3 {
+    margin: 20px 0 10px; } }
 
 @media only screen and (max-width: 480px) {
   .block_hover-image {
@@ -406,9 +462,16 @@
   footer .logo {
     max-width: 85px; }
   .footer-menu {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .btn-reverse {
+    height: 12px; }
+  .collection-wrapper .col-4 {
+    display: none; }
+    .collection-wrapper .col-4:nth-child(-n+3) {
+      display: block; }
+  .collection-wrapper .col-100 {
+    display: none; } }
 
-/* Custom, iPhone Retina */
 @media only screen and (max-width: 380px) {
   .home-image {
     max-width: 310px; }

@@ -208,7 +208,8 @@
     color: #fff
     text-decoration: underline
     .collection-box__image
-      border: 12px solid #F2734D
+      &:before
+        opacity: 1
   &__image
     width: 100%
     background: rgba(192, 97, 79, 0.68)
@@ -218,6 +219,17 @@
     @include d-flex
     margin: 0 auto 15px
     transition: .3s ease
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      border: 12px solid #F2734D
+      transition: .3s ease
     img
       max-height: 100%
       width: 100%
@@ -364,14 +376,191 @@
 /*==========  section subscribe-section end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section page-collection ==========*/
+.page
+  padding: 45px 0 0
+  color: #000000
+  h1
+    font-size: 50px
+    text-align: left
+    width: fit-content
+    font-weight: bold
+    text-transform: none
+    margin: 0 auto 0 0
+  .title-wrapper
+    margin: 0 0 24px
 
-/*==========  section end  ==========*/
+.form-search
+  position: relative
+  max-width: 321px
+  width: 100%
+  margin-left: 20px
+  label
+    width: 100%
+    margin: 0
+  button
+    position: absolute
+    background: transparent
+    width: 18px
+    height: 16px
+    fill: #4C434A
+    top: 50%
+    transform: translate(0,-50%)
+    right: 16px
+  input
+    padding: 0 16px 0 18px
+    height: 43px
+    font-size: 16px
+    font-weight: 600
+    text-transform: none
+    color: #000
+    letter-spacing: 0
+    border: 1px solid rgba(#CBA69B, .5)
+      radius: 28px
+    &::placeholder
+      color: #000
+
+.btn-reverse
+  padding: 0 17px 0 20px
+  font-weight: 600
+  font-size: 16px
+  height: 43px
+  color: #000
+  .btn-icon
+    width: 11px
+    height: 12px
+    margin: 0 6.5px 0 0
+
+.page-collection
+  padding: 45px 0 130px
+  .container
+    &:before
+      content: ''
+      position: absolute
+      top: -8px
+      left: -225px
+      width: 631px
+      height: 631px
+      background: url("../img/logo-letter.svg") no-repeat center
+        size: 100%
+      opacity: 0.5
+      filter: brightness(0) invert(1)
+      z-index: -1
+  h3
+    margin: 30px 0 15px
+    font-size: 20px
+    width: 100%
+    font-weight: 600
+  .collection-box
+    color: #000
+
+.list-tags
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 14px
+  font-weight: 500
+  margin: 0 0 24px
+  li
+    margin: 0 10px 5px 0
+    &:last-child
+      margin: 0 0 5px
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #000
+      background: rgba(#CBA69B, .5)
+      border-radius: 13px
+      height: 23px
+      padding: 0 11px
+      &:hover
+        color: #fff
+        background: $accent
 
 
-/*==========  section  ==========*/
+/*==========  section page-collection end  ==========*/
 
-/*==========  section end  ==========*/
+
+/*==========  section page-chapter ==========*/
+.list-category-chapter
+  margin: 0 0 20px
+  font-size: 18px
+  font-weight: bold
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 17px 9px 0
+    &:last-child
+      margin: 0 0 9px
+    a
+      color: #000
+      text-decoration: underline
+
+.collection-row
+  margin-top: 26px
+
+.chapter-box
+  text-align: left
+  text-decoration: none
+  text-transform: none
+  .collection-box__name
+    color: #000
+
+  .collection-box__image
+    height: 345px
+    border:
+      top: 6px solid #EB5757
+      radius: 10px
+    &:before
+      display: none
+  &:hover
+    text-decoration: none
+  .image-auto
+    background: #dec5be
+    border-top-color: #A287BC
+  .border-blue
+    border-top-color: #8DC0CA
+
+.collection-box__description
+  margin: 11px 0 0
+  font-weight: 500
+  font-size: 18px
+  display: block
+
+.pagination
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 40px 0 0
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+      a
+        width: fit-content
+        padding: 0 52px
+        border-radius: 40px
+    a
+      background: #fff
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      width: 50px
+      height: 50px
+      color: #000000
+      &:hover
+        color: #fff
+        background: #DE7856
+      &.active
+        color: #fff
+        background: #DE7856
+
+/*==========  section page-chapter end  ==========*/
 
 
 /*==========  section  ==========*/

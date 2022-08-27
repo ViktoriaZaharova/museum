@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Музей христианского исскуства</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__close"></div>
+  <ul class="menu my-ul">
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Образовательный курс</a></li>
+    <li><a href="collection.html">Коллекция</a></li>
+    <li><a href="#">События</a></li>
+    <li><a href="#">Музей за 15 минут</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</div>
+
+
+<header class="header">
+  <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="logo-letter"><img src="img/logo-letter.svg" alt=""></div>
+    <ul class="menu-header my-ul">
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Образовательный курс</a></li>
+      <li><a href="#">Коллекция</a></li>
+    </ul>
+
+
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+    <ul class="menu-header my-ul">
+      <li><a href="#">События</a></li>
+      <li><a href="#">Музей за 15 минут</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+  </div>
+</header>
+
+<section class="page page-collection">
+  <div class="container">
+    <div class="title-wrapper">
+      <h1>Коллекция</h1>
+
+      <a href="#" class="btn btn-white btn-reverse">
+        <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#reverse"></use></svg></span>
+        <span class="btn-text">Вернуться в коллекцию</span>
+      </a>
+
+      <form method="post" class="form-search">
+        <label>
+          <input type="text" placeholder="Поиск по коллекции">
+        </label>
+        <button type="submit">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="box-text">
+      <p>Экспозиция музея рассказывает о развитии христианского искусства, начиная с римских катакомб и заканчивая
+        живописными полотнами художников ХХ века. Коллекция знаменита шедеврами греческой и древнерусской иконописи,
+        иконами Оружейной палаты, произведениями старообрядческих школ и мастеров Русского Севера. В фондах находится
+        более 20 000 экспонатов, а цифровая коллекция постоянно пополняется.</p>
+
+        <p>Здесь вы можете открыть для себя разные виды христианского искусства, редкие примеры иконографии. Многие
+        предметы имеют не только художественную, но и сакральную ценность. </p>
+    </div>
+
+    <h3>Изучайте коллекцию, используя интерактивные теги в описании!</h3>
+
+    <ul class="list-tags my-ul">
+      <li><a href="#">Спас</a></li>
+      <li><a href="#">Богоматерь</a></li>
+      <li><a href="#">Деисус</a></li>
+      <li><a href="#">Троица</a></li>
+      <li><a href="#">Шедевры</a></li>
+      <li><a href="#">Ангелы</a></li>
+      <li><a href="#">Святыни</a></li>
+      <li><a href="#">Сергий Радонежский</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection1.png" alt=""></span>
+          <span class="collection-box__name">Иконопись</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection2.png" alt=""></span>
+          <span class="collection-box__name">Живопись</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection3.png" alt=""></span>
+          <span class="collection-box__name">Графика</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection4.png" alt=""></span>
+          <span class="collection-box__name">Шитье</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image image-auto"><img src="img/collection5.png" alt=""></span>
+          <span class="collection-box__name">Реликвии</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection6.png" alt=""></span>
+          <span class="collection-box__name">Книги</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection7.png" alt=""></span>
+          <span class="collection-box__name">Скульптура</span>
+        </a>
+      </div>
+      <div class="col-4 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection8.png" alt=""></span>
+          <span class="collection-box__name">Мелкая пластика
+</span>
+        </a>
+      </div>
+
+      <div class="col-100 mb-35">
+        <a href="product.html" class="collection-box">
+          <span class="collection-box__image"><img src="img/collection9.png" alt=""></span>
+          <span class="collection-box__name">дворец Царские чертоги</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="subscribe-section">
+  <div class="container">
+    <h2>Подпишитесь <br>на рассылку</h2>
+
+    <form method="post" class="form-subscribe">
+      <label>
+        <input type="text" placeholder="Ваше имя" name="name">
+      </label>
+      <label>
+        <input type="text" placeholder="E-mAIL" name="mail">
+      </label>
+      <button type="submit" class="btn btn-white">Подписаться</button>
+    </form>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-left">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+      <div class="copyright">© 2022 — Все права защищены</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-col">
+        <ul class="footer-menu my-ul">
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Образовательный курс</a></li>
+          <li><a href="#">Коллекция</a></li>
+          <li><a href="#">События</a></li>
+          <li><a href="#">Музей за 15 минут</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+
+        <a href="#" class="link color-white" target="_blank">Пользовательское соглашение</a>
+      </div>
+
+      <div class="footer-col">
+        <a href="tel:+79876543210" class="phone">+7 987 654-32-10</a>
+        <div class="logo-letter"><img src="img/logo-letter.svg" alt=""></div>
+
+        <a href="#" class="road-map color-white">Карта проезда</a>
+
+        <div class="address">Россия, Сергиев Посад, Свято-Троицкая Сергиева лавра</div>
+
+        <ul class="list-partner my-ul">
+          <li><img src="img/partner1.svg" alt=""></li>
+          <li><img src="img/partner2.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
