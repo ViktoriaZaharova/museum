@@ -1,0 +1,114 @@
+/*==========  section footer ==========*/
+footer {
+  position: relative;
+  z-index: 1;
+  background: #C5A79D;
+  color: #fff; }
+  footer .logo {
+    max-width: 203px;
+    margin: 0 auto auto;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1); }
+  footer .container {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  footer .phone {
+    color: #fff;
+    margin: 0 0 23px;
+    font-size: 17px; }
+    footer .phone:hover {
+      color: #231F20; }
+  footer .logo-letter {
+    max-width: 63px;
+    margin: 0;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1); }
+
+.footer-left {
+  position: relative;
+  z-index: 1;
+  padding: 127px 139px 67px 20px;
+  text-align: center;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer-left:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1400px;
+    background: #DE7856; }
+
+.copyright {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300; }
+
+.footer-right {
+  padding: 75px 64px 55px;
+  width: 67%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.footer-col {
+  margin: 0 120px 0 0;
+  max-width: 300px; }
+  .footer-col:last-child {
+    margin: 0; }
+  .footer-col .link {
+    font-size: 14px;
+    font-weight: 300; }
+
+.footer-menu {
+  margin: 0 0 95px;
+  font-weight: 500; }
+  .footer-menu li {
+    margin: 0 0 12px; }
+    .footer-menu li a {
+      color: #ffffff; }
+
+.road-map {
+  font-weight: 500;
+  margin: 35px 0 9px; }
+
+.address {
+  max-width: 297px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 60px; }
+
+.list-partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-partner li {
+    margin: 0 40px 0 0; }
+    .list-partner li:last-child {
+      margin: 0; }
+
+/*==========  section footer end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/

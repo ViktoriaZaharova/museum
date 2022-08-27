@@ -1,0 +1,250 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #A287BC
+  color: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 36px
+  box-sizing: border-box
+  font-family: $default-font
+  border: 1px solid #fff
+    radius: 48px
+  width: 100%
+  height: 67px
+  background: transparent
+  color: #fff
+  letter-spacing: 0.25em
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  &::placeholder
+    color: #fff
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  height: 67px
+  border-radius: 48px
+  padding: 0 45px
+  font-size: 18px
+  font-weight: 500
+
+.btn-accent
+  color: #fff
+  background: $accent
+
+  &:hover
+    background: $orange
+    color: #fff
+
+.btn-black
+  background: #231F20
+  color: #FCE179
+  font-size: 24px
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-white
+  background: #fff
+  color: #4C434A
+  font-size: 16px
+  height: 67px
+  padding: 0 33px
+  &:hover
+    background: $black
+    color: #fff
+
+.btn-border
+  border: 1px solid #CBA69B
+  background: #fff
+  color: #4C434A
+  &:hover
+    background: #4C434A
+    color: #fff
+
+.btn-sm
+  height: 54px
+
+
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+h1
+  text-transform: uppercase
+  text-align: center
+  font-weight: 600
+  font-size: 109px
+  width: 100%
+  letter-spacing: 0.045em
+  span
+    display: block
+
+
+h2
+  font-size: 80px
+  line-height: 83px
+  font-weight: 500
+
+
+.title-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+
+
+.container
+  width: 100%
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  max-width: 1260px
+
+  padding: 0 15px
+  margin: 0 auto
+
+
+.bg-violet
+  background: #A287BC
+
+.bg-green
+  background: #70AB9E
+
+.bg-blue
+  background: #8DC0CA
+
+.color-white
+  color: #fff
+
+a.color-white
+  &:hover
+    color: $accent
+
+.mb-35
+  margin-bottom: 35px
+
+.w-100
+  width: 100%
+
+.col-4
+  width: 25%
+  padding: 0 15px
+
+.col-100
+  width: 100%
+  padding: 0 15px
+
+.row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -15px
+

@@ -1,0 +1,421 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .footer-right {
+    padding: 30px; }
+  .footer-left {
+    padding: 60px 30px 40px; }
+  .footer-col {
+    margin: 0 70px 0 0; }
+  .form-subscribe label {
+    max-width: 260px;
+    min-width: 260px;
+    margin: 0 20px 0 0; }
+  .form-subscribe button {
+    min-width: 220px;
+    margin: 0; }
+  h1 {
+    font-size: 80px;
+    line-height: 1; }
+  h2 {
+    font-size: 60px;
+    line-height: normal; }
+  .seminar-wrapper {
+    margin: 0 0 60px; }
+    .seminar-wrapper__content {
+      padding: 30px; }
+  .seminar-box {
+    margin: 0 0 40px; }
+  .collections {
+    padding: 60px 0; }
+    .collections .container:before {
+      width: 500px;
+      height: 500px;
+      top: -20px; }
+  .panel_heading .block_hover h4 {
+    font-size: 55px;
+    line-height: 1;
+    max-width: 450px; }
+    .panel_heading .block_hover h4 br {
+      display: none; }
+  .home-image {
+    max-width: 408px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .footer-left {
+    padding: 0;
+    width: 100%;
+    margin: 0 0 29px; }
+    .footer-left:before {
+      display: none; }
+  footer {
+    padding: 26px 0 28px;
+    background: #DE7856; }
+    footer .logo {
+      margin: 0 auto 10px; }
+  .footer-right {
+    padding: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .subscribe-section h2 {
+    max-width: none;
+    width: 100%;
+    margin: 0 0 10px; }
+    .subscribe-section h2 br {
+      display: none; }
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 50px; }
+  .home-bottom .description {
+    display: none; }
+  .description-mobile {
+    display: block;
+    margin: 25px auto 37px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    max-width: 256px;
+    text-align: center; }
+  .home .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .home .btn-course {
+    margin: 0 auto 44px; }
+  .course-levels {
+    padding: 0; }
+    .course-levels .container {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0; }
+  .panel_heading {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none; }
+    .panel_heading .block_title {
+      -webkit-transform: none;
+              transform: none;
+      width: 100%;
+      min-height: auto;
+      height: auto;
+      padding: 20px;
+      border-bottom: 1px solid #fff; }
+      .panel_heading .block_title h3 {
+        -webkit-transform: none;
+                transform: none;
+        margin: 0; }
+    .panel_heading .block_hover {
+      padding: 40px 20px;
+      width: 100%; }
+      .panel_heading .block_hover h4 {
+        font-size: 40px;
+        max-width: 350px; }
+    .panel_heading .btn {
+      margin: 17px 0 0;
+      height: 50px; }
+    .panel_heading:first-child {
+      border: none; }
+      .panel_heading:first-child .block_hover-image {
+        right: -150px; }
+    .panel_heading:nth-child(2) .block_hover-image {
+      right: 0;
+      max-width: 250px; }
+    .panel_heading:last-child {
+      border: none; }
+      .panel_heading:last-child .block_hover-image {
+        right: 0;
+        max-width: 250px; }
+  .block_hover-image {
+    max-width: 600px; }
+  .col-4 {
+    width: 33.3%; }
+  .collections .mb-35 {
+    margin-bottom: 40px; }
+  .seminar-wrapper__image {
+    width: 300px; }
+  .seminar-wrapper__content {
+    width: calc(100% - 300px); }
+  .seminar-wrapper__top .btn {
+    padding: 0 30px; }
+  .seminar-wrapper h2 {
+    margin: 10px 0 20px; }
+  .btn {
+    height: 60px; }
+  .seminar-box__title {
+    font-size: 24px; }
+  input {
+    height: 60px; }
+  .subscribe-section {
+    padding: 25px 0 40px; }
+  .form-subscribe {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+    .form-subscribe button {
+      min-width: 200px; }
+    .form-subscribe label {
+      min-width: 240px;
+      max-width: 240px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header .logo {
+    max-width: 100px; }
+  .description-company {
+    max-width: 150px; }
+  .col-4 {
+    width: 50%; }
+  .title-wrapper h2 {
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: center; }
+  .title-wrapper .btn {
+    margin: 0 auto; }
+  h2 {
+    font-size: 40px; }
+  .btn {
+    height: 50px; }
+  .collections {
+    padding: 40px 0 0; }
+    .collections .title-wrapper {
+      margin: 0 0 33px; }
+    .collections .container:before {
+      display: none; }
+  .seminar-wrapper {
+    width: calc(100% + 30px);
+    margin: 0 -15px 22px;
+    padding: 32px 20px; }
+    .seminar-wrapper__image {
+      width: 200px; }
+    .seminar-wrapper__content {
+      width: calc(100% - 200px); }
+    .seminar-wrapper__top .btn {
+      display: none; }
+  .btn-visit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px auto;
+    width: 100%; }
+  .seminar-box {
+    padding: 0 30px; }
+    .seminar-box__title {
+      font-size: 18px; }
+    .seminar-box .seminar-date {
+      margin: 30px 0 0; }
+  .form-subscribe label {
+    min-width: auto;
+    width: 100%;
+    margin: 0 0 9px;
+    max-width: none; }
+  .form-subscribe button {
+    width: 100%;
+    min-width: auto; }
+  input {
+    height: 50px;
+    padding: 0 22px; }
+  .footer-col {
+    margin: 0 50px 0 0; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  header {
+    position: relative;
+    z-index: 7;
+    padding: 17px 0; }
+    header .logo-letter {
+      margin: 0;
+      max-width: 28px; }
+    header .logo {
+      max-width: 73px; }
+    header.menu-open {
+      background: #A287BC; }
+  .description-company {
+    display: none; }
+  .btn-burger {
+    width: 24px;
+    height: 16px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: auto; }
+    .btn-burger span {
+      height: 1px; }
+  .menu {
+    text-align: center;
+    width: 100%; }
+    .menu li {
+      width: 100%; }
+      .menu li a {
+        width: 100%; }
+  .mobile-menu {
+    max-width: none;
+    position: fixed;
+    padding: 89px 20px 49px;
+    height: 100%;
+    overflow-y: auto; }
+    .mobile-menu__close {
+      display: none; }
+  h1 {
+    font-size: 28px; }
+  h2 {
+    font-size: 30px; }
+  .description-mobile {
+    font-size: 16px; }
+  .home-bottom {
+    margin: 0; }
+    .home-bottom:before, .home-bottom:after {
+      height: 194px; }
+  .home-image {
+    margin: 0 auto;
+    max-width: 375px;
+    height: 204px; }
+    .home-image:before {
+      height: 194px;
+      width: 375px; }
+  .home .btn-course {
+    margin: 0 auto 44px;
+    height: 44px;
+    font-size: 20px;
+    padding: 0 55px; }
+  .panel_heading .block_title {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    white-space: normal; }
+  .panel_heading .block_hover h4 {
+    margin: 0 0 14px;
+    font-size: 30px;
+    max-width: 260px; }
+  .panel_heading .btn {
+    height: 37px;
+    padding: 0 20px;
+    font-size: 16px; }
+  .panel_heading:first-child .block_hover-image {
+    right: -100px; }
+  .panel_heading:nth-child(2) .block_hover-image {
+    max-width: 200px; }
+  .panel_heading:last-child .block_hover-image {
+    max-width: 180px; }
+  .block_hover-image {
+    max-width: 400px; }
+  .seminar-wrapper__image {
+    width: 94px; }
+  .seminar-wrapper__content {
+    width: calc(100% - 94px);
+    padding: 0 0 0 17px; }
+  .seminar-wrapper h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 500; }
+  .seminar-wrapper .btn {
+    width: 100%;
+    height: 37px; }
+  .seminar-wrapper .seminar-date {
+    display: none; }
+  .seminar-box {
+    width: 100%;
+    padding: 0 0 20px;
+    border-bottom: 2px solid #fff;
+    margin: 0 0 26px; }
+    .seminar-box:before {
+      display: none; }
+    .seminar-box__title {
+      max-width: none;
+      text-decoration: underline; }
+    .seminar-box:last-child {
+      border: none;
+      margin: 0; }
+  footer .logo-letter {
+    display: none; }
+  footer .phone {
+    width: 53%;
+    margin: 0; }
+  footer .road-map {
+    margin: 0;
+    width: 47%;
+    text-decoration: underline; }
+  .address {
+    margin: 10px 0 40px;
+    max-width: none; }
+  .footer-col {
+    width: 100%;
+    margin: 0 0 20px 0;
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .footer-col:last-child {
+      margin: 0; }
+    .footer-col .link {
+      display: none; }
+  .footer-menu {
+    width: 100%;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    margin: 0; } }
+
+@media only screen and (max-width: 480px) {
+  .block_hover-image {
+    max-width: 192px; }
+  .panel_heading:first-child .block_hover-image {
+    right: -58px; }
+  .panel_heading:nth-child(2) .block_hover-image {
+    max-width: 120px;
+    right: -20px; }
+  .panel_heading:last-child .block_hover-image {
+    max-width: 120px;
+    right: -20px; }
+  .col-4 {
+    width: 100%; }
+  .collections .col-4 {
+    display: none; }
+    .collections .col-4:nth-child(-n+2) {
+      display: block; }
+  .collections .col-100 {
+    display: none; }
+  .collections .btn {
+    width: 100%; }
+  .btn {
+    height: 37px;
+    font-size: 16px; }
+  input {
+    height: 45px; }
+  .seminar-wrapper h2 {
+    font-size: 18px; }
+  footer .logo {
+    max-width: 85px; }
+  .footer-menu {
+    font-size: 14px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 380px) {
+  .home-image {
+    max-width: 310px; }
+    .home-image:before {
+      width: 100%;
+      height: 150px; }
+  .home-bottom:before, .home-bottom:after {
+    height: 150px; }
+  .collection-box__image {
+    height: 335px; } }
