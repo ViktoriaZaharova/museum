@@ -439,7 +439,8 @@
     width: fit-content;
     font-weight: bold;
     text-transform: none;
-    margin: 0 auto 0 0; }
+    margin: 0 auto 0 0;
+    letter-spacing: 0; }
   .page .title-wrapper {
     margin: 0 0 24px; }
 
@@ -549,6 +550,9 @@
       .list-tags li a:hover {
         color: #fff;
         background: #70AB9E; }
+    .list-tags li .list-tags-toggle {
+      background: transparent;
+      border: 1px solid rgba(203, 166, 155, 0.5); }
 
 /*==========  section page-collection end  ==========*/
 /*==========  section page-chapter ==========*/
@@ -645,7 +649,144 @@
         background: #DE7856; }
 
 /*==========  section page-chapter end  ==========*/
-/*==========  section  ==========*/
+/*==========  section product-page ==========*/
+.page-product {
+  padding: 66px 0 50px;
+  background: #fff; }
+  .page-product h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    max-width: 900px;
+    margin: 0 auto; }
+
+.product-slider {
+  margin: 39px auto 54px;
+  max-width: 970px;
+  width: 100%;
+  padding: 0 60px; }
+  .product-slider__image {
+    max-width: 850px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.product-content {
+  padding: 37px 0 107px; }
+  .product-content .container:before {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: -95px;
+    width: 631px;
+    height: 631px;
+    background: url("../img/logo-letter.svg") no-repeat center;
+      background-size: 100%;
+    opacity: 0.5;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    z-index: -1; }
+  .product-content__description {
+    width: 50%; }
+    .product-content__description .box-text {
+      max-width: 544px; }
+  .product-content__info {
+    width: 50%; }
+  .product-content .panel_heading {
+    border: none;
+      border-top: 1px solid #C5A79D;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .product-content .panel_heading .block_title {
+      min-height: auto;
+      width: 100%;
+      padding: 18px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: none; }
+      .product-content .panel_heading .block_title h3 {
+        -webkit-transform: none;
+                transform: none;
+        letter-spacing: 0;
+        color: #000;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: none; }
+    .product-content .panel_heading:last-child {
+      border-bottom: 1px solid #C5A79D; }
+      .product-content .panel_heading:last-child .block_title {
+        border: none; }
+    .product-content .panel_heading .block_hover {
+      padding: 0 0 37px;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none; }
+    .product-content .panel_heading.in .icon-toggle {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+
+.icon-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  background: #DE7856;
+  fill: none;
+  stroke: #fff;
+  padding: 7px; }
+
+.list-characteristics {
+  color: #000;
+  margin: 0 0 44px; }
+  .list-characteristics li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 17px; }
+    .list-characteristics li:last-child {
+      margin: 0; }
+    .list-characteristics li p {
+      font-weight: bold;
+      min-width: 160px;
+      max-width: 160px;
+      margin: 0 40px 0 0; }
+    .list-characteristics li span {
+      display: inline-block; }
+    .list-characteristics li a {
+      display: inline-block;
+      color: #943921;
+      text-decoration: underline;
+      margin: 0 3px 0 0; }
+      .list-characteristics li a:last-child {
+        margin: 0; }
+
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/

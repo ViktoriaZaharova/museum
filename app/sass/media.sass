@@ -238,6 +238,22 @@
   .page-collection
     padding: 17px 0 70px
 
+  .product-content
+    padding: 26px 0 60px
+    .container
+      &:before
+        width: 400px
+        height: 400px
+    &__description
+      width: 100%
+      margin: 0 0 30px
+      .box-text
+        max-width: none
+    &__info
+      width: 100%
+
+  .product-content .panel_heading:last-child
+    border-top: 1px solid #C5A79D
 
 @media only screen and (max-width: 768px)
   header
@@ -329,6 +345,35 @@
   .page
     h1
       font-size: 40px
+
+  .mb-70
+    margin-bottom: 40px
+
+  .pagination
+    margin: 20px 0 0
+    font-size: 16px
+    li
+      margin: 0 10px 0 0
+      &:last-child
+        a
+          padding: 0 25px
+      a
+        width: 30px
+        height: 30px
+
+  .page-chapter
+    padding: 17px 0 110px
+
+  .page-product
+    padding: 20px 0 40px
+
+  .product-slider
+    margin: 20px auto 30px
+    padding: 0 30px
+
+  .slick-arrow
+    width: 26px
+    height: 26px
 
 
 @media only screen and (max-width: 576px)
@@ -531,6 +576,17 @@
     h3
       margin: 20px 0 10px
 
+
+  .list-characteristics
+    li
+      flex-wrap: wrap
+      p
+        min-width: auto
+        max-width: none
+        margin: 0 0 5px
+      span
+        width: 100%
+
 @media only screen and (max-width: 480px)
   .block_hover-image
     max-width: 192px
@@ -581,13 +637,25 @@
   .btn-reverse
     height: 12px
     
-  .collection-wrapper
+  .collection-row
+    margin-top: 6px
     .col-4
       display: none
       &:nth-child(-n+3)
         display: block
     .col-100
       display: none
+
+  .chapter-box
+    font-size: 16px
+    .collection-box__image
+      height: 412px
+
+  .list-category-chapter
+    font-size: 13px
+
+  .mb-70
+    margin-bottom: 25px
 
 
 @media only screen and (max-width: 380px)
@@ -602,3 +670,9 @@
 
   .collection-box__image
     height: 335px
+
+  .pagination
+    li
+      &:last-child
+        a
+          padding: 0 20px
