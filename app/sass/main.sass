@@ -175,10 +175,11 @@
   padding: 90px 0 110px
   .container
     max-width: 1210px
+    z-index: 1
     &:before
       content: ''
       position: absolute
-      z-index: 1
+      z-index: -1
       width: 631px
       height: 631px
       background: url("../img/logo-letter.svg") no-repeat center
@@ -187,7 +188,7 @@
       left: -227px
       top: -70px
       filter: brightness(0) invert(1)
-  h2
+  h2, .link-title
     text-decoration: underline
     margin: 0 auto 0 0
   .title-wrapper
