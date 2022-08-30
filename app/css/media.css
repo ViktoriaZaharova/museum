@@ -188,13 +188,6 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    .header .logo-letter {
-      margin: 0; }
-    .header .btn-burger {
-      -webkit-box-ordinal-group: 2;
-          -ms-flex-order: 1;
-              order: 1;
-      margin-left: auto; }
   .btn-reverse {
     height: 43px; }
   .form-search {
@@ -315,11 +308,15 @@
     padding: 17px 0; }
     header .logo-letter {
       margin: 0;
-      max-width: 28px; }
+      max-width: 28px;
+      z-index: 7; }
     header .logo {
-      max-width: 73px; }
+      max-width: 73px;
+      z-index: 7; }
     header.menu-open {
       background: #A287BC; }
+    header .container {
+      z-index: 7; }
   .description-company {
     display: none; }
   .btn-burger {
@@ -344,7 +341,8 @@
     position: fixed;
     padding: 89px 20px 49px;
     height: 100%;
-    overflow-y: auto; }
+    overflow-y: auto;
+    top: 0; }
     .mobile-menu__close {
       display: none; }
   h1 {

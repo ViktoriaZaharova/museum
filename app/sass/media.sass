@@ -224,11 +224,12 @@
     padding: 21px 0
     .btn-burger, .logo-letter
       display: flex
-    .logo-letter
-      margin: 0
-    .btn-burger
-      order: 1
-      margin-left: auto
+    //.logo-letter
+    //  margin: 0
+    //.btn-burger
+      //order: 1
+      //margin-left: auto
+      //position: relative
 
   .btn-reverse
     height: 43px
@@ -390,12 +391,16 @@
     .logo-letter
       margin: 0
       max-width: 28px
+      z-index: 7
 
     .logo
       max-width: 73px
+      z-index: 7
 
     &.menu-open
       background: #A287BC
+    .container
+      z-index: 7
 
   .description-company
     display: none
@@ -426,7 +431,7 @@
     padding: 89px 20px 49px
     height: 100%
     overflow-y: auto
-
+    top: 0
     &__close
       display: none
 
