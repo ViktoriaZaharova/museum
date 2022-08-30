@@ -20,7 +20,7 @@
     height: 210px;
     bottom: 0; }
   .home-bottom:before {
-    width: 282px;
+    width: 30%;
     z-index: 1;
     left: 0;
     background: #8DC0CA; }
@@ -481,6 +481,14 @@
       color: #000; }
     .form-search input::placeholder {
       color: #000; }
+    .form-search input:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .form-search input:focus::-moz-placeholder {
+      color: transparent; }
+    .form-search input:focus::-ms-input-placeholder {
+      color: transparent; }
+    .form-search input:focus::placeholder {
+      color: transparent; }
 
 .btn-reverse {
   padding: 0 17px 0 20px;
@@ -584,7 +592,9 @@
 .chapter-box {
   text-align: left;
   text-decoration: none;
-  text-transform: none; }
+  text-transform: none;
+  font-size: 20px;
+  font-weight: bold; }
   .chapter-box .collection-box__name {
     color: #000; }
   .chapter-box .collection-box__image {

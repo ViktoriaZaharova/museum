@@ -23,9 +23,9 @@
     height: 210px
     bottom: 0
   &:before
-    width: 282px
+    //width: 282px
+    width: 30%
     z-index: 1
-    //width: calc(100% - 1000px)
     left: 0
     background: #8DC0CA
   &:after
@@ -421,6 +421,9 @@
       radius: 28px
     &::placeholder
       color: #000
+    &:focus::placeholder
+      color: transparent
+
 
 .btn-reverse
   padding: 0 17px 0 20px
@@ -511,6 +514,8 @@
   text-align: left
   text-decoration: none
   text-transform: none
+  font-size: 20px
+  font-weight: bold
   .collection-box__name
     color: #000
 

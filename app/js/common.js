@@ -25,11 +25,11 @@ $('.btn-burger').on('click', function () {
     $('header').toggleClass('menu-open');
 });
 
-$('.mobile-menu__close').on('click', function () {
-    $('.mobile-menu').fadeOut();
-    $('.btn-burger').removeClass('open');
-    $('header').removeClass('menu-open');
-});
+// $('.mobile-menu__close').on('click', function () {
+//     $('.mobile-menu').fadeOut();
+//     $('.btn-burger').removeClass('open');
+//     $('header').removeClass('menu-open');
+// });
 // mobile menu end
 
 
