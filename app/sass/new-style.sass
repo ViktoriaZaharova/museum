@@ -13,8 +13,14 @@
 
 @media (max-width: 768px)
   .chapter-box .collection-box__image
-    max-width: 294px
+    position: relative
+    height: auto
     width: 100%
+    padding-bottom: 92%
+    img
+      position: absolute
+      left: 0
+      top: 0
 
 @media (max-width: 576px)
   .page-collection
@@ -23,17 +29,10 @@
         width: calc(100% - 25px)
 
   .chapter-box .collection-box__image
-    height: 340px
+    height: auto
 
-  .chapter-box .collection-box__name
-    max-width: 294px
-    margin: 0 auto
-
-  .chapter-box .collection-box__description
-    margin: 26px auto 0
-    max-width: 294px
 
 @media only screen and (max-width: 480px)
   .chapter-box .collection-box__image
-    height: 340px
+    height: auto
     width: 100%
