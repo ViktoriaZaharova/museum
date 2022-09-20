@@ -1,37 +1,41 @@
 @import "vars"
 
 /*==========  section home ==========*/
+
 .home
-  background: $orange
-  color: $black
+  background: #E4AB18
+  color: #231F20
+
   .btn-course
     margin: 13px auto -20px
     padding: 0 65px
     position: relative
     z-index: 2
 
-
 .home-bottom
   position: relative
   z-index: 1
   overflow: hidden
   margin: -53px 0 0
+
   &:before, &:after
     content: ''
     position: absolute
     left: -1px
     height: 210px
     bottom: 0
+
   &:before
-    //width: 282px
     width: 30%
     z-index: 1
     left: 0
     background: #8DC0CA
+
   &:after
     right: 0
     width: 100%
     background: #E66C52
+
   .description
     color: #231F20
     font-size: 26px
@@ -43,10 +47,14 @@
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
     z-index: 1
     margin: 0
+
   .container
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
 
 .description-mobile
@@ -60,6 +68,7 @@
   position: relative
   z-index: 1
   margin-left: -80px
+
   &:before
     content: ''
     position: absolute
@@ -67,49 +76,61 @@
     width: 404px
     height: 210px
     background: url("../img/figure-home.svg") no-repeat center
-      size: 100%
+    background-size: 100%
     bottom: 0
     left: 0
 
-
 /*==========  section home end  ==========*/
-
-
 /*==========  section course-levels ==========*/
+
 .course-levels
   position: relative
   z-index: 1
   padding: 58px 0 80px
+
   .container
     position: initial
+    -ms-flex-wrap: nowrap
     flex-wrap: nowrap
 
 .panel_heading
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
   align-items: stretch
-  &-bg
-    position: absolute
-    z-index: -1
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    opacity: 0
-    visibility: hidden
-    transition: .3s ease
+
+.panel_heading-bg
+  position: absolute
+  z-index: -1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  visibility: hidden
+  -webkit-transition: .3s ease
+  transition: .3s ease
+
+.panel_heading
   &:first-child
     border-left: 2px solid #fff
+
     .block_hover-image
       right: -163px
-  &:nth-child(2)
-    .block_hover-image
-      right: 25px
-      max-width: 366px
+
+  &:nth-child(2) .block_hover-image
+    right: 25px
+    max-width: 366px
+
   &:last-child
     border-right: 2px solid #fff
+
     .block_hover-image
       max-width: 463px
       right: -44px
+
   .block_title
     min-height: 577px
     width: 87px
@@ -121,30 +142,39 @@
     letter-spacing: 0.57em
     text-transform: uppercase
     cursor: pointer
+    -webkit-transition: .3s ease
     transition: .3s ease
+
     h3
+      -webkit-transform: rotate(90deg)
       transform: rotate(90deg)
       white-space: nowrap
       margin-top: 24px
 
   .block_hover
     width: calc(100% - 87px)
+    -webkit-transition: .4s linear
     transition: .4s linear
     display: none
+
     h4
       font-size: 80px
       line-height: 70px
       font-weight: 500
       margin: 20px 0 28px
       max-width: 609px
+
     ul
       font-size: 14px
       font-weight: 500
+
   &.in
     width: 100%
+
     .panel_heading-bg
       opacity: 1
       visibility: visible
+
     .block_hover
       display: block
 
@@ -154,6 +184,7 @@
   display: flex
   flex-direction: column
   position: relative
+
   .btn
     margin: auto 0 0
 
@@ -161,21 +192,22 @@
   position: absolute
   right: 0
   top: 50%
-  transform: translate(0,-50%)
+  -webkit-transform: translate(0, -50%)
+  transform: translate(0, -50%)
   z-index: -1
   max-width: 854px
 
-
 /*==========  section course-levels end  ==========*/
-
-
 /*==========  section collections ==========*/
+
 .collections
   background: #CBA69B
   padding: 90px 0 110px
+
   .container
     max-width: 1210px
     z-index: 1
+
     &:before
       content: ''
       position: absolute
@@ -183,14 +215,17 @@
       width: 631px
       height: 631px
       background: url("../img/logo-letter.svg") no-repeat center
-        size: 100%
+      background-size: 100%
       opacity: .1
       left: -227px
       top: -70px
+      -webkit-filter: brightness(0) invert(1)
       filter: brightness(0) invert(1)
+
   h2, .link-title
     text-decoration: underline
     margin: 0 auto 0 0
+
   .title-wrapper
     margin: 0 0 70px
     position: relative
@@ -208,46 +243,57 @@
   &:hover
     color: #fff
     text-decoration: underline
-    .collection-box__image
-      &:before
-        opacity: 1
-  &__image
+
+    .collection-box__image:before
+      opacity: 1
+
+.collection-box__image
+  width: 100%
+  background: rgba(192, 97, 79, 0.68)
+  border-radius: 10px
+  overflow: hidden
+  height: 272px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 15px
+  transition: .3s ease
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
     width: 100%
-    background: rgba(192, 97, 79, 0.68)
-    border-radius: 10px
-    overflow: hidden
-    height: 272px
-    @include d-flex
-    margin: 0 auto 15px
+    height: 100%
+    opacity: 0
+    border: 12px solid #F2734D
+    -webkit-transition: .3s ease
     transition: .3s ease
-    position: relative
-    &:before
-      content: ''
-      position: absolute
-      left: 0
-      top: 0
-      width: 100%
-      height: 100%
-      opacity: 0
-      border: 12px solid #F2734D
-      transition: .3s ease
-    img
-      max-height: 100%
-      width: 100%
-      height: 100%
-      object-fit: cover
-  .image-auto
-    padding: 16px
-    img
-      width: auto
-      height: auto
-      object-fit: contain
+
+  img
+    max-height: 100%
+    width: 100%
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+
+.collection-box .image-auto
+  padding: 16px
+
+  img
+    width: auto
+    height: auto
+    -o-object-fit: contain
+    object-fit: contain
+
 /*==========  section collections end  ==========*/
-
-
 /*==========  section seminar ==========*/
+
 .seminar
   background: #70AB9E
+
   .container
     max-width: 1470px
 
@@ -261,26 +307,34 @@
   align-items: stretch
   color: #70AB9E
   margin: 0 auto 104px
-  &__image
-    width: 466px
-    @include d-flex
-    img
-      width: 100%
-      height: 100%
-      object-fit: cover
-  &__content
-    width: calc(100% - 466px)
-    padding: 39px 124px 46px 58px
-    display: flex
-    flex-direction: column
-  &__top
+
+.seminar-wrapper__image
+  width: 466px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
     width: 100%
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-wrap: wrap
-    .btn
-      padding: 0 60px
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+
+.seminar-wrapper__content
+  width: calc(100% - 466px)
+  padding: 39px 124px 46px 58px
+  display: flex
+  flex-direction: column
+
+.seminar-wrapper__top
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+  .btn
+    padding: 0 60px
 
 .seminar-category
   letter-spacing: 0.25em
@@ -305,7 +359,6 @@
   align-items: stretch
   flex-wrap: wrap
 
-
 .seminar-box
   margin: 0 0 80px
   width: 33.3%
@@ -313,12 +366,16 @@
   flex-direction: column
   position: relative
   padding: 0 23px 0 50px
+
   &:first-child
     padding-left: 0
+
   &:last-child
     padding-right: 0
+
     &:before
       display: none
+
   &:before
     content: ''
     position: absolute
@@ -327,60 +384,66 @@
     background: #fff
     width: 2px
     height: 130px
+
   .seminar-category
     font-size: 12px
     margin: 0 0 20px
-  &__title
-    color: #fff
-    max-width: 350px
-    font-size: 28px
-    font-weight: 500
-    margin: 0 0 auto
-    &:hover
-      color: $orange
-  .seminar-date
-    margin: 60px 0 0
-    font-size: 13px
-    letter-spacing: 0.1em
 
+.seminar-box__title
+  color: #fff
+  max-width: 350px
+  font-size: 28px
+  font-weight: 500
+  margin: 0 0 auto
+
+  &:hover
+    color: #E4AB18
+
+.seminar-box .seminar-date
+  margin: 60px 0 0
+  font-size: 13px
+  letter-spacing: 0.1em
 
 /*==========  section seminar end  ==========*/
-
-
 /*==========  section subscribe-section ==========*/
+
 .subscribe-section
   background: #E4AB18
   color: #fff
   padding: 40px 0
+
   h2
     font-size: 28px
     font-weight: 500
     max-width: 250px
     line-height: normal
     margin: 0 auto 0 0
+
   .container
     align-items: center
 
 .form-subscribe
   display: flex
   align-items: flex-start
+
   label
     max-width: 320px
     min-width: 320px
     width: 100%
     margin: 0 25px 0 0
+
   button
     min-width: 242px
     padding: 0 10px
     margin: 0 0 0 8px
 
 /*==========  section subscribe-section end  ==========*/
-
-
 /*==========  section page-collection ==========*/
+
 .page
   padding: 45px 0 0
   color: #000000
+
   h1
     font-size: 50px
     text-align: left
@@ -389,6 +452,7 @@
     text-transform: none
     margin: 0 auto 0 0
     letter-spacing: 0
+
   .title-wrapper
     margin: 0 0 24px
 
@@ -397,9 +461,11 @@
   max-width: 321px
   width: 100%
   margin-left: 20px
+
   label
     width: 100%
     margin: 0
+
   button
     position: absolute
     background: transparent
@@ -407,8 +473,9 @@
     height: 16px
     fill: #4C434A
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     right: 16px
+
   input
     padding: 0 16px 0 18px
     height: 43px
@@ -417,13 +484,16 @@
     text-transform: none
     color: #000
     letter-spacing: 0
-    border: 1px solid rgba(#CBA69B, .5)
-      radius: 28px
+    border: 1px solid rgba(203, 166, 155, 0.5)
+    border-radius: 28px
     &::placeholder
       color: #000
-    &:focus::placeholder
-      color: transparent
+    &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder
+      color: #000
 
+    &:focus
+      &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder
+        color: transparent
 
 .btn-reverse
   padding: 0 17px 0 20px
@@ -431,6 +501,7 @@
   font-size: 16px
   height: 43px
   color: #000
+
   .btn-icon
     width: 11px
     height: 12px
@@ -438,24 +509,27 @@
 
 .page-collection
   padding: 45px 0 130px
-  .container
-    &:before
-      content: ''
-      position: absolute
-      top: -8px
-      left: -225px
-      width: 631px
-      height: 631px
-      background: url("../img/logo-letter.svg") no-repeat center
-        size: 100%
-      opacity: 0.5
-      filter: brightness(0) invert(1)
-      z-index: -1
+
+  .container:before
+    content: ''
+    position: absolute
+    top: -8px
+    left: -225px
+    width: 631px
+    height: 631px
+    background: url("../img/logo-letter.svg") no-repeat center
+    background-size: 100%
+    opacity: 0.5
+    -webkit-filter: brightness(0) invert(1)
+    filter: brightness(0) invert(1)
+    z-index: -1
+
   h3
     margin: 30px 0 15px
     font-size: 20px
     width: 100%
     font-weight: 600
+
   .collection-box
     color: #000
 
@@ -467,30 +541,34 @@
   font-size: 14px
   font-weight: 500
   margin: 0 0 24px
+
   li
     margin: 0 10px 5px 0
+
     &:last-child
       margin: 0 0 5px
+
     a
       display: flex
       align-items: center
       justify-content: center
       color: #000
-      background: rgba(#CBA69B, .5)
+      background: rgba(203, 166, 155, 0.5)
       border-radius: 13px
       height: 23px
       padding: 0 11px
+
       &:hover
         color: #fff
-        background: $accent
+        background: #70AB9E
+
     .list-tags-toggle
       background: transparent
-      border: 1px solid rgba(#CBA69B, .5)
+      border: 1px solid rgba(203, 166, 155, 0.5)
 
 /*==========  section page-collection end  ==========*/
-
-
 /*==========  section page-chapter ==========*/
+
 .list-category-chapter
   margin: 0 0 20px
   font-size: 18px
@@ -499,13 +577,22 @@
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+
   li
     margin: 0 17px 9px 0
+
     &:last-child
       margin: 0 0 9px
+
     a
       color: #000
       text-decoration: underline
+      &:hover
+        color: #DE7856
+        text-decoration: none
+      &.active
+        color: #DE7856
+        text-decoration: none
 
 .collection-row
   margin-top: 26px
@@ -516,21 +603,25 @@
   text-transform: none
   font-size: 20px
   font-weight: bold
+
   .collection-box__name
     color: #000
 
   .collection-box__image
     height: 345px
-    border:
-      top: 6px solid #EB5757
-      radius: 10px
+    border-top: 6px solid #EB5757
+    border-radius: 10px
+
     &:before
       display: none
+
   &:hover
     text-decoration: none
+
   .image-auto
     background: #dec5be
     border-top-color: #A287BC
+
   .border-blue
     border-top-color: #8DC0CA
 
@@ -542,40 +633,51 @@
 
 .pagination
   display: flex
+  -webkit-box-align: start
+  -ms-flex-align: start
   align-items: flex-start
+  -ms-flex-wrap: wrap
   flex-wrap: wrap
   margin: 40px 0 0
+
   li
     margin: 0 10px 0 0
+
     &:last-child
       margin: 0
+
       a
         width: fit-content
         padding: 0 52px
         border-radius: 40px
+
     a
       background: #fff
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       border-radius: 50%
       width: 50px
       height: 50px
       color: #000000
-      &:hover
-        color: #fff
-        background: #DE7856
-      &.active
+
+      &:hover, &.active
         color: #fff
         background: #DE7856
 
 /*==========  section page-chapter end  ==========*/
-
-
 /*==========  section product-page ==========*/
+
 .page-product
   padding: 66px 0 50px
   background: #fff
+
   h1
     width: 100%
     text-align: center
@@ -588,70 +690,101 @@
   max-width: 970px
   width: 100%
   padding: 0 60px
-  &__image
-    max-width: 850px
-    margin: 0 auto
-    @include d-flex
+
+.product-slider__image
+  max-width: 850px
+  margin: 0 auto
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
 
 .product-content
   padding: 37px 0 107px
-  .container
-    &:before
-      content: ''
-      position: absolute
-      top: 37px
-      left: -95px
-      width: 631px
-      height: 631px
-      background: url("../img/logo-letter.svg") no-repeat center
-        size: 100%
-      opacity: 0.5
-      filter: brightness(0) invert(1)
-      z-index: -1
 
-  &__description
-    width: 50%
-    .box-text
-      max-width: 544px
-  &__info
-    width: 50%
-  .panel_heading
+  .container:before
+    content: ''
+    position: absolute
+    top: 37px
+    left: -95px
+    width: 631px
+    height: 631px
+    background: url("../img/logo-letter.svg") no-repeat center
+    background-size: 100%
+    opacity: 0.5
+    -webkit-filter: brightness(0) invert(1)
+    filter: brightness(0) invert(1)
+    z-index: -1
+
+.product-content__description
+  width: 50%
+
+  .box-text
+    max-width: 544px
+
+.product-content__info
+  width: 50%
+
+.product-content .panel_heading
+  border: none
+  border-top: 1px solid #C5A79D
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+  .block_title
+    min-height: auto
+    width: 100%
+    padding: 18px 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
     border: none
-      top: 1px solid #C5A79D
-    flex-wrap: wrap
+
+    h3
+      -webkit-transform: none
+      transform: none
+      letter-spacing: 0
+      color: #000
+      width: fit-content
+      margin: 0 auto 0 0
+      font-size: 16px
+      font-weight: bold
+      text-transform: none
+
+  &:last-child
+    border-bottom: 1px solid #C5A79D
+
     .block_title
-
-      min-height: auto
-      width: 100%
-      padding: 18px 0
-      display: flex
-      align-items: center
       border: none
-      h3
-        transform: none
-        letter-spacing: 0
-        color: #000
-        width: fit-content
-        margin: 0 auto 0 0
-        font-size: 16px
-        font-weight: bold
-        text-transform: none
-    &:last-child
-      border:
-        bottom: 1px solid #C5A79D
-      .block_title
-        border: none
-    .block_hover
-      padding: 0 0 37px
-      width: 100%
-      transition: none
 
-    &.in
-      .icon-toggle
-        transform: rotate(90deg)
+  .block_hover
+    padding: 0 0 37px
+    width: 100%
+    -webkit-transition: none
+    transition: none
+
+  &.in .icon-toggle
+    -webkit-transform: rotate(90deg)
+    transform: rotate(90deg)
 
 .icon-toggle
-  @include d-flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
   width: 24px
   height: 24px
   min-width: 24px
@@ -664,34 +797,42 @@
 .list-characteristics
   color: #000
   margin: 0 0 44px
+
   li
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
     margin: 0 0 17px
+
     &:last-child
       margin: 0
+
     p
       font-weight: bold
       min-width: 160px
       max-width: 160px
       margin: 0 40px 0 0
+
     span
       display: inline-block
+
     a
       display: inline-block
       color: #943921
       text-decoration: underline
       margin: 0 3px 0 0
+
       &:last-child
         margin: 0
 
 
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
 
 /*==========  section end  ==========*/
+
+
 
 
 /*==========  section  ==========*/

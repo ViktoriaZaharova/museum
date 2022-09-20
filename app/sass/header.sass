@@ -2,14 +2,16 @@
 
 /*==========  section header ==========*/
 header
-  background: $orange
+  background: #E4AB18
   padding: 33px 0 20px
+
   .container
     align-items: center
     position: relative
     max-width: 1365px
+
   .logo
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     left: 50%
     position: absolute
 
@@ -23,30 +25,36 @@ header
   position: absolute
   cursor: pointer
   z-index: 6
+
   span
     display: block
     width: 100%
     height: 2px
     background: #252930
+    -webkit-transition: .3s ease
     transition: .3s ease
-  &.open
-    span
-      position: absolute
-      top: 10px
-      left: 0
-      &:first-child
-        transform: rotate(45deg)
-      &:last-child
-        transform: rotate(135deg)
-      &:nth-child(2)
-        width: 0
 
+  &.open span
+    position: absolute
+    top: 10px
+    left: 0
 
+    &:first-child
+      transform: rotate(45deg)
+
+    &:last-child
+      transform: rotate(135deg)
+
+    &:nth-child(2)
+      width: 0
 
 .logo-letter
   max-width: 47px
-  @include d-flex
+  display: flex
+  align-items: center
+  justify-content: center
   margin: 0 0 0 68px
+
   img
     width: 100%
 
@@ -54,7 +62,10 @@ header
   margin: 0 auto
   max-width: 142px
   width: 100%
-  @include d-flex
+  display: flex
+  align-items: center
+  justify-content: center
+
   img
     width: 100%
 
@@ -65,11 +76,12 @@ header
   font-size: 10px
   font-weight: bold
   text-transform: uppercase
-  color: $black
+  color: #231F20
   margin-left: auto
 
 .header
   padding: 45px 0 40px
+
   .btn-burger, .logo-letter
     display: none
 
@@ -81,22 +93,26 @@ header
   font-weight: bold
   letter-spacing: 0.1em
   text-transform: uppercase
+
   &:last-child
     margin-left: auto
     text-align: right
+
   li
     margin: 0 35px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: #231F20
+
       &:hover
         color: #fff
+
 /*==========  section header end  ==========*/
-
-
-
 /*==========  section mobile-menu ==========*/
+
 .mobile-menu
   position: absolute
   left: 0
@@ -107,37 +123,48 @@ header
   z-index: 5
   padding: 50px 50px 38px 114px
   display: none
-  &__close
-    width: 22px
-    height: 22px
+
+.mobile-menu__close
+  width: 22px
+  height: 22px
+  position: absolute
+  top: 43px
+  left: 50px
+  cursor: pointer
+
+  &:before, &:after
+    content: ''
     position: absolute
-    top: 43px
-    left: 50px
-    cursor: pointer
-    &:before, &:after
-      content: ''
-      position: absolute
-      left: 10px
-      top: 0
-      width: 2px
-      height: 100%
-      background: #252930
-    &:before
-      transform: rotate(45deg)
-    &:after
-      transform: rotate(135deg)
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: #252930
+
+  &:before
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+  &:after
+    -webkit-transform: rotate(135deg)
+    transform: rotate(135deg)
 
 .menu
   letter-spacing: 0.1em
   font-size: 13px
   font-weight: 700
   text-transform: uppercase
+
   li
     margin: 0 0 25px
+
     &:last-child
       margin: 0
+
     a
-      color: $black
+      color: #231F20
+
       &:hover
-        color: $orange
+        color: #E4AB18
+
 /*==========  section mobile-menu end  ==========*/

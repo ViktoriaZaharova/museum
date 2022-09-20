@@ -136,27 +136,28 @@ header {
   z-index: 5;
   padding: 50px 50px 38px 114px;
   display: none; }
-  .mobile-menu__close {
-    width: 22px;
-    height: 22px;
+
+.mobile-menu__close {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 43px;
+  left: 50px;
+  cursor: pointer; }
+  .mobile-menu__close:before, .mobile-menu__close:after {
+    content: '';
     position: absolute;
-    top: 43px;
-    left: 50px;
-    cursor: pointer; }
-    .mobile-menu__close:before, .mobile-menu__close:after {
-      content: '';
-      position: absolute;
-      left: 10px;
-      top: 0;
-      width: 2px;
-      height: 100%;
-      background: #252930; }
-    .mobile-menu__close:before {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
-    .mobile-menu__close:after {
-      -webkit-transform: rotate(135deg);
-              transform: rotate(135deg); }
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #252930; }
+  .mobile-menu__close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .mobile-menu__close:after {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
 
 .menu {
   letter-spacing: 0.1em;
