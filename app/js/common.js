@@ -65,12 +65,23 @@ $('.team-projects-wrapper .container').each(function () {
 
 $('.btn-toggle-team').on('click', function (e) {
     e.preventDefault();
-    $(this).parents('.team-projects-wrapper').find('.team-projects-item:hidden').slice(0, 4).css('display', 'flex');
+    $(this).parents('.team-projects-wrapper').find('.team-projects-item:hidden').slice(0, 4).fadeIn();
 
     var onBlock = $(this).prev('.team-projects-wrapper').find('.team-projects-item:hidden').length;
     if(onBlock <= 0) {
         $(this).hide();
     }
+});
+
+$('.go_to').click(function (e) {
+    e.preventDefault();
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length !== 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
 });
 
 
@@ -87,20 +98,32 @@ $('.history-museum-slider').slick({
     appendArrows: '.history-museum-slider__nav',
     variableWidth: true,
     centerMode: true,
+    infinite: false,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: false,
+                infinite: false,
+                centerMode: false,
+                appendArrows: '.history-museum-slider',
+                prevArrow: '<button type="button" class="slick-prev"><span>→</span></button>',
+                nextArrow: '<button type="button" class="slick-next"><span>→</span></button>',
+                adaptiveHeight: true
+            }
+        }
+    ]
 });
 
 $('.history-museum-timeline-slider .history-museum-timeline__item').click(function() {
     var $this = $(this);
     $('.history-museum-timeline__item').removeClass('active');
     $this.addClass('active');
-    $('.history-museum-slider').slick('slickGoTo', $this.data('index'))
+    $('.history-museum-slider').slick('slickGoTo', $this.data('index'));
 });
 
-// $('.history-museum-timeline').slick({
-//     slidesToShow: 12,
-//     asNavFor: '.history-museum-slider'
-// });
 
 

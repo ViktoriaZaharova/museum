@@ -170,7 +170,10 @@
   padding: 100px 0 90px;
   color: #000; }
   .team-projects h2 {
-    margin: 0 0 47px; }
+    margin: 0 0 47px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal; }
   .team-projects .row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -618,6 +621,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .history-museum-timeline-slider .slick-current .history-museum-timeline__item:before {
+    background: #BA634B; }
 
 .history-museum-timeline__item {
   position: relative;
@@ -704,10 +709,319 @@
     font-weight: bold;
     margin: 0 0 10px; }
 
+.d-mobile {
+  display: none; }
+
 /*==========  section about page end  ==========*/
+@media only screen and (max-width: 1270px) {
+  .history-museum-slider__nav {
+    max-width: 1000px; } }
+
+@media only screen and (max-width: 1200px) {
+  .history-museum-slider .slick-slide {
+    margin: 0 100px 0 0; } }
+
+@media only screen and (max-width: 992px) {
+  .about-content {
+    padding: 0 0 0 20px; }
+  .team-projects {
+    padding: 50px 0; }
+    .team-projects h2 {
+      margin: 0 0 30px;
+      font-size: 30px; }
+  .team-projects-card {
+    margin: 0 0 30px; }
+    .team-projects-card__photo {
+      width: 151px;
+      height: 151px;
+      min-width: 151px; }
+    .team-projects-card h4 {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 0 10px; }
+    .team-projects-card .position {
+      font-size: 14px;
+      line-height: 20px; }
+  .team-projects-item__photo {
+    width: 120px;
+    height: 120px;
+    min-width: 120px; }
+  .team-projects-item__content {
+    padding: 0 0 0 18px; }
+  .history-museum-slider {
+    background: transparent;
+    padding: 0; }
+  .history-museum-wrapper:before {
+    display: none; }
+  .history-museum-slider__nav {
+    max-width: 800px; }
+  .history-museum {
+    padding: 22px 0 41px; }
+  .history-museum-timeline {
+    margin: 30px 0 0; }
+  .history-museum-slider .slick-slide {
+    margin: 0 40px 0 0; } }
+
+@media only screen and (max-width: 768px) {
+  .page-about-home {
+    padding: 45px 0 291px; }
+  .about-content {
+    width: calc(100% - 162px); }
+  .about-image {
+    width: 162px; }
+  .learn-course {
+    padding: 50px 0 40px; }
+    .learn-course h2 {
+      font-size: 30px; }
+    .learn-course:before {
+      height: 25px;
+      background-size: 75px; }
+    .learn-course__content {
+      width: calc(100% - 250px); }
+    .learn-course__image {
+      max-width: 350px; }
+    .learn-course .btn {
+      margin: 30px 0 0; }
+  .team-projects-card {
+    width: 100%; }
+  .team-projects-item {
+    width: 100%;
+    margin: 0 0 27px; }
+    .team-projects-item .box-text {
+      max-width: none; }
+  .team-projects-wrapper {
+    padding: 23px 0 0; }
+  .museum-section {
+    padding: 20px 0 10px; }
+    .museum-section .box-text {
+      font-size: 14px;
+      line-height: 20px; }
+      .museum-section .box-text strong {
+        font-size: 16px;
+        line-height: 22px; }
+    .museum-section__content {
+      width: 100%;
+      padding: 0; }
+  .museum-section__gallery {
+    margin: 22px auto 0; }
+  .cooperation {
+    padding: 60px 0 100px; }
+    .cooperation h2 {
+      font-size: 30px; }
+    .cooperation__image {
+      width: 250px;
+      height: 500px; }
+    .cooperation__content {
+      width: calc(100% - 250px);
+      padding: 0 0 0 20px; }
+    .cooperation .box-text {
+      font-size: 14px;
+      line-height: 20px; }
+  .cooperation-item {
+    margin: 0 0 20px; }
+  .history-museum h2 {
+    margin: 0 0 24px; }
+  .history-museum-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .history-museum-item__content {
+      padding: 0;
+      width: 100%;
+      margin: 42px 0 0; }
+    .history-museum-item h3 {
+      font-size: 30px;
+      margin: 0 0 13px;
+      line-height: 24px; }
+    .history-museum-item .box-text {
+      line-height: 20px;
+      font-size: 14px; }
+  .history-museum-slider {
+    padding: 0 15px; }
+    .history-museum-slider .slick-slide {
+      opacity: 1;
+      margin: 0; }
+    .history-museum-slider .slick-arrow {
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      color: #BA634B;
+      font-size: 30px;
+      font-weight: 300;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+    .history-museum-slider .slick-prev {
+      left: 15px; }
+      .history-museum-slider .slick-prev span {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+    .history-museum-slider .slick-next {
+      right: 15px; }
+    .history-museum-slider .slick-disabled {
+      opacity: 0; }
+  .history-museum-timeline:before {
+    display: none; }
+  .history-museum-timeline__item span {
+    display: none; } }
+
+@media only screen and (max-width: 650px) {
+  .image-max {
+    width: 206px;
+    height: 142px;
+    border-width: 4px; }
+  .image-min {
+    width: 154px;
+    height: 102px;
+    border-width: 4px;
+    margin: -70px -120px 0 auto; }
+  .image-submin {
+    border-width: 4px;
+    width: 109px;
+    height: 158px;
+    margin: -109px 0 0 40px; }
+    .image-submin img {
+      border-radius: 10px; }
+  .history-museum-item2 .image-min {
+    width: 102px;
+    height: 154px; }
+  .history-museum-item3 .image-max {
+    width: 140px;
+    height: 300px; }
+  .history-museum-item3 .history-museum-item__gallery:before {
+    width: 150px;
+    height: 260px; }
+  .history-museum-item5 .image-max {
+    width: 180px;
+    height: 280px; }
+  .history-museum-item5 .history-museum-item__gallery:before {
+    width: 180px;
+    height: 230px; }
+  .history-museum-item4 .image-min {
+    width: 120px;
+    height: 132px; }
+  .history-museum-item__gallery:before {
+    width: 211px;
+    height: 122px;
+    top: 30px;
+    left: 6px; }
+  .history-museum-timeline-slider {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .history-museum-timeline__item {
+    padding: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    margin: 0 12px 0 0; }
+    .history-museum-timeline__item:last-child {
+      margin: 0; }
+    .history-museum-timeline__item:before {
+      position: relative;
+      display: block;
+      min-width: 13px;
+      width: 13px;
+      height: 13px;
+      border: none; }
+    .history-museum-timeline__item:after {
+      width: 21px;
+      height: 21px;
+      top: -4px; } }
+
 @media only screen and (max-width: 576px) {
   .row {
-    margin: 0; } }
+    margin: 0; }
+  .page-about-home {
+    padding: 17px 0 153px; }
+  .about-content {
+    padding: 0;
+    width: 100%; }
+    .about-content .box-text p:first-child {
+      padding: 0 0 0 110px; }
+  .about-image {
+    position: absolute;
+    left: -61px;
+    top: -20px;
+    margin: 0; }
+  .about-wrapper {
+    position: relative; }
+  .learn-course h2 {
+    font-size: 20px;
+    margin: 0 0 15px; }
+  .learn-course .box-text {
+    font-size: 14px; }
+  .team-projects {
+    padding: 22px 0 41px; }
+    .team-projects h2 {
+      margin: 0 0 21px;
+      font-size: 20px; }
+    .team-projects .row {
+      margin: 0; }
+  .team-projects-card {
+    padding: 0; }
+  .team-projects-item h4 {
+    font-size: 14px; }
+  .team-projects-item .position, .team-projects-item .box-text {
+    font-size: 12px; }
+  .team-projects-item .position {
+    margin: 3px 0; }
+  .team-projects-item__photo {
+    width: 80px;
+    height: 80px;
+    min-width: 80px; }
+  .btn-toggle-team {
+    width: 100%;
+    margin: 9px auto 0; }
+  .museum-section h2 {
+    font-size: 20px;
+    margin: 0 0 11px; }
+  .museum-section .box-text p {
+    margin: 0 0 12px; }
+    .museum-section .box-text p:last-child {
+      margin: 0; }
+  .museum-section__gallery {
+    max-width: 320px; }
+  .image-gallery:before {
+    width: 40px;
+    height: 40px; }
+  .image-gallery1, .image-gallery2 {
+    height: 161px; }
+  .image-gallery3, .image-gallery4 {
+    height: 159px; }
+  .image-gallery1 {
+    width: 193px; }
+  .image-gallery2 {
+    width: 127px; }
+  .image-gallery3 {
+    width: 145px; }
+  .image-gallery4 {
+    width: 175px; }
+  .image-gallery5 {
+    height: 160px; }
+  .cooperation {
+    padding: 23px 0 111px; }
+    .cooperation h2 {
+      margin: 0 0 12px;
+      font-size: 20px; }
+    .cooperation__image {
+      display: none; }
+    .cooperation__content {
+      padding: 0;
+      width: 100%; }
+    .cooperation img.d-mobile {
+      display: inline-block;
+      max-width: 120px;
+      float: right;
+      border-radius: 20px;
+      margin: 0 0 13px 13px; }
+  .history-museum h2 {
+    font-size: 20px; } }
 
 @media only screen and (max-width: 480px) {
   .chapter-box .collection-box__image {
@@ -715,4 +1029,58 @@
     margin: 0 auto 20px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content; } }
+    width: fit-content; }
+  .about-image {
+    top: 0; }
+  .about-content .box-text {
+    font-size: 14px; }
+  .list-category-product {
+    font-size: 13px;
+    margin: 0 0 15px; }
+    .list-category-product li {
+      margin: 0 18px 4px 0; }
+      .list-category-product li:last-child {
+        margin: 0 0 4px; }
+  .btn-play {
+    height: 45px;
+    margin: 28px auto 0; }
+  .learn-course__content {
+    max-width: none;
+    width: 100%; }
+    .learn-course__content .box-text {
+      line-height: 20px; }
+      .learn-course__content .box-text p {
+        margin: 0 0 20px; }
+        .learn-course__content .box-text p:last-child {
+          margin: 0; }
+        .learn-course__content .box-text p:first-child {
+          padding: 0 91px 0 0; }
+  .learn-course__image {
+    max-width: 277px;
+    right: -85px;
+    position: absolute;
+    top: 30px; }
+  .learn-course .btn {
+    margin: 30px auto 0; }
+  .cooperation .btn {
+    width: 100%;
+    height: 50px; } }
+
+@media only screen and (max-width: 400px) {
+  .about-content .box-text {
+    line-height: 20px; }
+  .btn-play {
+    width: 100%;
+    max-width: none; }
+  .image-gallery1 {
+    width: 170px; }
+  .image-gallery2 {
+    width: 120px; }
+  .image-gallery3 {
+    width: 140px; }
+  .image-gallery4 {
+    width: 150px; } }
+
+@media only screen and (max-width: 350px) {
+  .image-min {
+    margin: -70px -80px 0 auto; } }
