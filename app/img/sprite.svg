@@ -17,4 +17,14 @@
         <path d="M2 2L9 8.5L2 15" stroke-width="3"/>
     </symbol>
 
+    <symbol id="play" viewBox="0 0 19 23">
+        <path d="M0.25 0.875L18.8125 11.8438L0.25 22.8125V0.875Z"/>
+    </symbol>
+
+
+    <symbol id="close" viewBox="0 0 17 18">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.5 9.50008L16.2635 17.2635L16.9706 16.5564L9.20711 8.79297L17 1.00008L16.2929 0.292969L8.5 8.08586L0.707107 0.292969L0 1.00008L7.79289 8.79297L0.0294375 16.5564L0.736544 17.2635L8.5 9.50008Z"/>
+    </symbol>
+
 </svg>

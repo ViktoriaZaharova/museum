@@ -1,5 +1,12 @@
 @font-face {
   font-family: "TTHoves";
+  font-weight: 275;
+  font-style: normal;
+  src: url("../fonts/TTHoves/TTHoves-ExtraLight.eot");
+  src: url("../fonts/TTHoves/TTHoves-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/TTHoves/TTHoves-ExtraLight.woff") format("woff"), url("../fonts/TTHoves/TTHoves-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "TTHoves";
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/TTHoves/TTHoves-Light.eot");

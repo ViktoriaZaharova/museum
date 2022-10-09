@@ -68,7 +68,7 @@ $('.btn-toggle-team').on('click', function (e) {
     $(this).parents('.team-projects-wrapper').find('.team-projects-item:hidden').slice(0, 4).fadeIn();
 
     var onBlock = $(this).prev('.team-projects-wrapper').find('.team-projects-item:hidden').length;
-    if(onBlock <= 0) {
+    if (onBlock <= 0) {
         $(this).hide();
     }
 });
@@ -118,7 +118,32 @@ $('.history-museum-slider').slick({
     ]
 });
 
-$('.history-museum-timeline-slider .history-museum-timeline__item').click(function() {
+$('.arranged-icon-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    dots: true,
+    infinite: false,
+    arrows: true,
+    appendArrows: '.arranged-icon-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev">Предыдущая икона</button>',
+    nextArrow: '<button type="button" class="slick-next">Следующая икона</button>',
+});
+
+$('.tooltip-icon').on('click', function () {
+   $(this).siblings('.tooltip-box').fadeIn();
+});
+
+$('.tooltip-box__close').on('click', function (e) {
+    e.preventDefault();
+    $('.tooltip-box').fadeOut();
+});
+
+$('.comparison-item-click').on('click', function () {
+    $('.comparison-item').removeClass('active');
+    $(this).addClass('active');
+});
+
+$('.history-museum-timeline-slider .history-museum-timeline__item').click(function () {
     var $this = $(this);
     $('.history-museum-timeline__item').removeClass('active');
     $this.addClass('active');
