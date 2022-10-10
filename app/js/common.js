@@ -143,12 +143,17 @@ $('.comparison-item-click').on('click', function () {
     $(this).addClass('active');
 });
 
-$('.history-museum-timeline-slider .history-museum-timeline__item').click(function () {
+$('.history-museum-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    console.log(nextSlide);
+    $('*[data-index="'+ currentSlide +'"]').removeClass("active");
+    $('*[data-index="'+ nextSlide +'"]').addClass("active");
+});
+
+$('.history-museum-timeline-slider .history-museum-timeline__item').click(function() {
     var $this = $(this);
     $('.history-museum-timeline__item').removeClass('active');
     $this.addClass('active');
     $('.history-museum-slider').slick('slickGoTo', $this.data('index'));
 });
-
 
 

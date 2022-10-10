@@ -994,6 +994,8 @@
     margin: 0 auto 0 0
   h4
     margin: 12px 0 10px
+  .box-text
+    margin-bottom: 0
 
 .subtitle-name
   color: #000
@@ -1155,6 +1157,7 @@
   margin: 50px auto 0
   position: relative
   bottom: 0
+  padding: 0
   li
     cursor: pointer
     transition: .3s ease
@@ -1207,7 +1210,7 @@
     right: 0
     transform: none
   .slick-disabled
-    display: none
+    display: none !important
   .slick-prev
     margin: 0 10px 0 0
 
@@ -1316,6 +1319,8 @@
     max-width: 420px
     width: 100%
     color: #fff
+    .comparison-item__icon
+      display: none
     .box-text
       font-size: 18px
       line-height: 24px
@@ -1374,9 +1379,20 @@
       width: 42px
       height: 42px
       padding: 13px
+      .svg-icon
+        margin: 0 -4px 0 0
 
   .lecture-content
     width: calc(100% - 400px)
+
+  .tooltip-box-v2
+    min-width: 300px
+
+  .era-v2 .era-content
+    max-width: 650px
+
+  .era-image
+    max-width: 400px
 
 @media only screen and (max-width: 992px)
   .about-content
@@ -1447,14 +1463,126 @@
     max-width: none
 
   .lecture-video-box
-    max-width: 335px
-    height: 190px
+    max-width: 550px
+    height: 300px
     margin: 0 auto 7px
 
   .author-video
     margin: 8px 0 15px
     max-width: none
 
+  .era-v2
+    padding: 23px 0
+    .era-content
+      max-width: 550px
+
+  .era
+    h4
+      font-size: 24px
+      line-height: normal
+
+  .arranged-icon-item
+    flex-wrap: wrap
+
+  .tooltip-box
+    min-width: auto
+    width: 100%
+    max-width: none
+    position: relative
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    transform: none
+    margin: 18px auto 0
+
+  .tooltip-wrapper
+    position: initial
+    right: 0
+    top: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    transform: none
+    .tooltip-icon
+      position: absolute
+
+  .tooltip-wrapper1
+    .tooltip-icon
+      top: 79px
+      left: 3px
+
+  .tooltip-wrapper2
+    .tooltip-icon
+      top: 65px
+      left: 50%
+      transform: translate(-50%, 0)
+
+  .tooltip-wrapper3
+    .tooltip-icon
+      right: 58px
+      top: 173px
+
+  .tooltip-wrapper4
+    .tooltip-icon
+      top: 400px
+      left: 80px
+
+  .tooltip-wrapper5
+    .tooltip-icon
+      top: 300px
+      right: 100px
+
+  .tooltip-wrapper6
+    .tooltip-icon
+      left: 150px
+      top: 150px
+
+  .subtitle-name
+    font-size: 16px
+
+  .icon-comparison-wrapper
+    padding: 32px 0 78px
+
+  .icon-comparison__result-wrapper
+    font-size: 70px
+    line-height: normal
+    padding: 30px 20px
+
+  .icon-comparison
+    h2
+      font-size: 30px
+      margin: 0 auto 26px
+    h3
+      margin: 0 auto 15px
+      font-size: 24px
+
+  .comparison-item__description
+    max-width: 350px
+
+  .heritage-content
+    max-width: 500px
+
+  .heritage
+    padding: 24px 0 36px
+    h3
+      font-size: 24px
+      img
+        max-width: 18px
+
+  .era-content
+    max-width: none
+
+  .era
+    h2
+      img
+        margin: 0 5px 0 0
+
+  .era-image
+    position: relative
+    max-width: 232px
+    margin: 0 0 24px
+    left: 0
 
 @media only screen and (max-width: 768px)
   .page-about-home
@@ -1626,6 +1754,75 @@
       padding: 0
       font-size: 14px
       line-height: 20px
+
+  .h2
+    font-size: 30px
+    line-height: normal
+
+  .era-v2
+    .era-content
+      max-width: none
+
+  .era
+    .btn
+      margin: 23px auto 0
+      width: 100%
+      max-width: none
+      padding: 0 20px
+    h4
+      margin: 5px 0 11px
+      img
+        max-width: 20px
+    .box-text
+      margin: 11px 0 0
+
+  .comparison-item__description
+    max-width: none
+    .comparison-item__icon
+      display: flex
+      margin: 0 auto 17px
+      width: 30px
+      position: relative
+      top: 0
+      left: 0
+      bottom: 0
+      transform: none
+
+  .heritage-image
+    max-width: 237px
+    margin: 0 auto
+    order: -1
+
+  .heritage-content
+    width: 100%
+    max-width: none
+
+  .heritage h3
+    font-size: 20px
+    line-height: 24px
+    br
+      display: none
+
+  .era-image
+    margin: 0 auto 24px
+
+  .era
+    padding: 49px 0 63px
+    h2
+      img
+        margin: 0 10px 0 0
+        max-width: 15px
+
+  .podcast-content
+    padding: 0
+    width: 100%
+    order: -1
+
+  .podcast-audio
+    margin: 15px auto 0
+    max-width: 335px
+    &__image
+      height: 240px
 
 @media only screen and (max-width: 650px)
   .image-max
@@ -1836,6 +2033,182 @@
   .course-levels-v2 .block_hover-image
     max-width: 250px
 
+  .lecture-video-box
+    max-width: 335px
+    height: 190px
+
+  .h2
+    font-size: 20px
+    line-height: 24px
+
+  .lecture
+    h2
+      margin: 0 0 11px
+      img
+        margin: 0 0 0 5px
+        max-width: 25px
+    h4
+      margin: 0 0 20px
+      font-size: 18px
+      line-height: 21px
+
+  .author-video, .lecture-content .box-text
+    font-size: 14px
+    line-height: 20px
+
+  .era
+    h4
+      line-height: 24px
+      font-size: 20px
+    .box-text
+      font-size: 14px
+      line-height: 20px
+
+  .arranged-icon
+    padding: 24px 0 40px
+    h2
+      font-size: 25px
+      line-height: 29px
+      margin: 0 auto 12px
+      img
+        margin: 0 auto 6px
+    .description
+      font-size: 14px
+      line-height: 20px
+      margin: 0 auto 10px
+
+  .arranged-icon-item
+    max-width: 338px
+
+  .tooltip-box
+    font-size: 14px
+    line-height: 20px
+    p
+      font-size: 14px
+      line-height: 20px
+    h4
+      font-size: 20px
+      line-height: 24px
+      margin: 0 0 10px
+
+  .tooltip-icon
+    width: 20px
+    height: 20px
+    &:before
+      width: 16px
+      height: 16px
+
+  .arranged-icon-item__info
+    margin: 24px auto 0
+    h3
+      font-size: 20px
+      line-height: 24px
+      margin: 0 auto 6px
+    .date
+      font-size: 14px
+      line-height: 16px
+
+  .slick-dots
+    margin: 31px auto 0
+    li
+      width: 14px
+      height: 14px
+      margin: 0 20px 0 0
+      &:last-child
+        margin: 0
+
+  .arranged-icon-slider__nav
+    flex-wrap: wrap
+    margin: 39px auto 0
+    .slick-arrow
+      height: 45px
+      width: 100%
+    .slick-prev
+      margin: 0 auto 10px
+
+  .subtitle-name
+    font-size: 14px
+    line-height: 20px
+
+  .comparison-item__icon
+    max-width: 30px
+    bottom: -15px
+
+  .comparison-item__image
+    max-width: 140px
+    border-width: 4px
+
+  .comparison-item
+    padding: 0 20px 0 0
+    &:last-child
+      padding: 0 0 0 20px
+    &:before
+      height: 121px
+      top: 26px
+
+  .icon-comparison
+    h3
+      margin: 0 auto 17px
+      font-size: 16px
+      line-height: 19px
+    h2
+      margin: 0 auto 26px
+      font-size: 25px
+      line-height: 29px
+
+  .icon-comparison-wrapper
+    h5
+      margin: 19px auto 0
+      font-size: 18px
+      line-height: 21px
+    .btn
+      margin: 26px auto 0
+      padding: 0 20px
+      max-width: none
+      width: 100%
+
+  .number-question
+    font-size: 14px
+    line-height: 28px
+
+  .comparison-item__description
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+    h5
+      margin: 0 0 20px
+      font-size: 15px
+      line-height: 20px
+      br
+        display: none
+    .box-text
+      font-size: 14px
+      line-height: 20px
+
+  .icon-comparison__result-wrapper
+    font-size: 30px
+    line-height: 35px
+    border-radius: 20px
+
+  .podcast
+    .box-text
+      font-size: 14px
+      line-height: 20px
+    .h2
+      img
+        max-width: 15px
+
+  .share-section
+    padding: 35px 0 47px
+    h2
+      font-size: 22px
+      line-height: 26px
+    .btn
+      margin: 26px auto 0
+      max-width: none
+      width: 100%
+      padding: 0 20px
+
 @media only screen and (max-width: 480px)
   .chapter-box .collection-box__image
     height: 346px
@@ -1887,7 +2260,8 @@
       width: 100%
       height: 50px
 
-
+  .tooltip-wrapper4 .tooltip-icon
+    top: 100px
 
 @media only screen and (max-width: 400px)
   .about-content
